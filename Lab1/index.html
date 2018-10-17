@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Najprostszy kalkulator w JS!!!</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            
+            function calculate()
+            {
+                var wartosc1 = parseFloat(document.getElementById('wartosc1').value);
+                var wartosc2 = parseFloat(document.getElementById('wartosc2').value);
+                
+                var dzialanie = document.getElementById('dzialanie').value;
+                
+                if(dzialanie === '+')
+                {
+                    document.getElementById('wynik').value = wartosc1+wartosc2;
+                }
+                
+                if(dzialanie === '-')
+                {
+                    document.getElementById('wynik').value = wartosc1-wartosc2;
+                }
+                
+                if(dzialanie === '/')
+                {
+                	if(wartosc2==0){
+                		alert("Nie mozna dzielic przez 0!")
+                	} else {
+                    document.getElementById('wynik').value = wartosc1/wartosc2;
+               		}
+                }
+                
+                if(dzialanie === '*')
+                {
+                    document.getElementById('wynik').value = wartosc1*wartosc2;
+                }
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+    <div id="container">
+        <div class="mid">
+        <h1>Bardzo prosty kalkulator zrobiony w JS i znacznikach HTML</h1>
+        Wpisz pierwsza wartosc
+        <input type="text" id="wartosc1"/><br/><br/>
+        Wpisz druga wartosc
+        <input type="text" id="wartosc2"/><br/><br/>
+        Wybierz rodzaj operacji
+        <select id="dzialanie">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+        
+        <button onclick="calculate();">Oblicz!</button>
+        <input type="text" id="wynik"/>
+    </div>
+    </div>
+    </body>
+</html>
