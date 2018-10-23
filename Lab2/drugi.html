@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style-drugi.css">
+	<title>Laboratorium nr 2</title>
+</head>
+<body>
+
+	<header>
+		<p style="color:white">Marvel</p>
+	</header>
+	<div id="info">
+		Podstawowe informacje o bohaterach Marvela
+		<p>Nacisnij przycisk, aby powrocic na strone glowna!</p>
+		<button onclick="powrot()">Powrot na strone glowna</button>
+		<script>
+			function powrot() {
+				var btn = document.createElement("BUTTON");
+				btn.style.cssText = "width: 100px; height:100px;position:absolute;float:left;";
+				btn.innerHTML = "Kliknij tutaj!";
+				btn.id = 'przycisk';
+				btn.onclick = function(){
+					window.location = 'index.html';return false;
+				}
+
+				document.body.appendChild(btn);
+			}
+		</script>
+	</div>
+	<aside>
+		<nav>
+			<ul>
+				<li><a href="podstrony/deadpool.html" target="ramka">Deadpool</a></li>
+				<li><a href="podstrony/punisher.html" target="ramka">Punisher</a></li>
+				<li><a href="podstrony/ironman.html" target="ramka">Iron Man</a></li>
+				<li><a href="podstrony/filmy.html" target="ramka">Informacje o filmach</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<p>
+		<blockquote>We have a Hulk <FOOTER>~ Iron Man</FOOTER></blockquote>
+
+		<iframe src="" width="800" height="600" name="ramka">
+		</iframe>
+
+
+
+	</body>
+	</html>

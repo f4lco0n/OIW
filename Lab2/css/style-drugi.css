@@ -1,0 +1,41 @@
+header {
+	background-color: red;
+	height: 50px;
+	border: 1px solid black;
+	margin-top: 0;
+	text-align: center;
+
+}
+
+aside {
+	border: 1px solid black;
+	text-align: center;
+}
+
+
+
+
+#info {
+	border: 2px solid black;
+	text-align: center;
+}
+
+iframe {
+	background-color: grey;
+	text-align: center;
+	margin-left: 25%;
+}
+
+#przycisk {
+	background-color: red;
+	float:left;
+
+}
+
+blockquote {
+	border: 5px green;
+	border-style: dotted solid double;
+	margin-left: 50%;
+}
+
+}
